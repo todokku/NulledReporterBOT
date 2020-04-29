@@ -1,7 +1,7 @@
 # NulledSpamBOT
 Nulled Tool for reporting leechers
 
-Usage:
+[h1]Usage:
 
 1. The tool needs your cookies to work with Nulled.
 Open Developer tools on a browser and paste all the cookies into 'cookies.txt' file.
