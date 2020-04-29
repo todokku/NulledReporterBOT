@@ -9,6 +9,8 @@ import requests
 
 def report():
     users = sort()
+    print('Loaded ' + str(len(users)) + ' users to report')
+    f = open('bannedusers.txt', 'a')
 
     try:
         users = load(open('bannable.json', 'r'))
@@ -25,6 +27,8 @@ def report():
 
         if reportReq.status_code == 200:
             print('Reported: ' + user['name'])
+            f.write(user['name'] + '\n')
+            
 
         sleep(10)
 
